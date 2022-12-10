@@ -19,13 +19,11 @@ class TripSeeder extends Seeder
             [
                 [
                     'name' => 'Cairo-Asyut',
-                    'from_station_id' => 1,
-                    'to_station_id' => 4
+                    'from_station_id' => 1
                 ],
                 [
                     'name' => 'AlFayyum-Asyut',
-                    'from_station_id' => 2,
-                    'to_station_id' => 4
+                    'from_station_id' => 2
                 ]
             ]
         );
