@@ -61,8 +61,8 @@ class TripController extends Controller
 
             $stationSeats = $this->tripService->getAvailableSeats($request->all());
             return response()->json([
-                'message' => "Available Seats in stations",
-                'stationSeats' => $stationSeats
+                'message' => "Available Seats",
+                'available trips' => $stationSeats
 
             ], 200);
         } catch (Throwable $e) {
