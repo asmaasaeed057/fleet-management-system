@@ -54,7 +54,6 @@ class TripTest extends TestCase
         $this->getRequestParams = $this->getRequestParams();
         $this->id = User::find(2)->id;
         $this->trips = Trip::all();
-        $this->getRequestParamsBookTrip = $this->getRequestParamsBookTrip();
     }
 
     function test_json_response_for_get_trips()
@@ -82,13 +81,5 @@ class TripTest extends TestCase
         ];
     }
 
-    private function getRequestParamsBookTrip(): array
-    {
-        return [
-            'from_station_id' => 1,
-            'to_station_id' => 4,
-            'trip_id' => 1,
-            'user_id' => $this->id
-        ];
-    }
+
 }
