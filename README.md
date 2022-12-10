@@ -1,22 +1,35 @@
-Installation
+**Installation
 
 $ git clone https://github.com/asmaasaeed057/fleet-management-system.git
+
 $ cd fleet-management-system
+
 $ composer install
+
 $ cp .env.example .env
+
 $ configure your database in .env
+
 $ php artisan migrate --seed
+
 $ php artisan key:generate
+
 $ php artisan serve
 
-Tests
+
+**Tests
+
 You can run 
+
 $ php artisan test
 
 Api Documentation link 
+
 https://documenter.getpostman.com/view/6592079/2s8YzS14Fh
 
-Docker 
+
+**Docker 
+
 You can run The project using sail
 
 cd fleet-management-system
